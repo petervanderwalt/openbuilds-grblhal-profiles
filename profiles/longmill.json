@@ -1,0 +1,118 @@
+{
+	"machine": [
+		"name": "Sienci Longmill",
+		"URL": "https://resources.sienci.com/view/lm-welcome/"
+	],
+    "core_options": [
+        "N_AXIS=4",
+        "Y_GANGED=1",
+        "MODBUS_BAUDRATE=3", -> DEFAULT_MODBUS_STREAM_BAUD
+        "N_TOOLS=8", - should be in a differetnt profile?
+        "NGC_EXPRESSIONS_ENABLE=1",
+        "ROTARY_FIX=1",
+        "N_SPINDLE=3" - derived from enabled spindles, which can be used depends on board caps
+    ],
+    "driver_options": [
+        "Y_GANGED=1",
+        "PROBE_ENABLE=1", - default
+        "TRINAMIC_ENABLE=2660", - forced by board map
+        "TRINAMIC_R_SENSE=50", - forced by board map
+        "TRINAMIC_SPI_ENABLE=2", - forced by board map
+        "MODBUS_ENABLE=3", - forced by board map
+        "EEPROM_ENABLE=128", - forced by board map
+        "SDCARD_ENABLE=2",
+        "MACROS_ENABLE=1",
+        "CONTROL_ENABLE=64",
+    ],
+    "plugin_options": [
+        "SDCARD_ENABLE=2",
+        "MACROS_ENABLE=1",
+        "CONTROL_ENABLE=64",
+        "SPINDLE0_ENABLE=11",
+        "SPINDLE1_ENABLE=14",
+        "SPINDLE2_ENABLE=6"
+        "SPINDLE_OFFSET=1",
+    ],
+    "setting_defaults": [
+        "DEFAULT_STEP_PULSE_MICROSECONDS=5",
+        "DEFAULT_STEPPER_IDLE_LOCK_TIME=254",
+        "DEFAULT_DIR_SIGNALS_INVERT_MASK=6",
+        "DEFAULT_LIMIT_SIGNALS_INVERT_MASK=15",
+        "DEFAULT_PROBE_SIGNAL_INVERT=1",
+        "DEFAULT_TLS_SIGNAL_INVERT=1",
+        "DEFAULT_CONTROL_SIGNALS_INVERT_MASK=14",
+        "DEFAULT_PLANNER_BUFFER_BLOCKS=128" - default,
+        "DEFAULT_RESET_OVERRIDES=1",
+        "DEFAULT_HOMING_ENABLE=1",
+        "DEFAULT_HOMING_SINGLE_AXIS_COMMANDS=1",
+        "DEFAULT_HOMING_INIT_LOCK=1",
+        "DEFAULT_HOMING_FORCE_SET_ORIGIN=1",
+        "DEFAULT_HOMING_OVERRIDE_LOCKS=1",
+        "DEFAULT_HOMING_DIR_MASK=11",
+        "DEFAULT_HOMING_FEED_RATE=150",
+        "DEFAULT_HOMING_SEEK_RATE=4300",
+        "DEFAULT_HOMING_DEBOUNCE_DELAY=25",
+        "DEFAULT_HOMING_PULLOFF=1.5",
+        "DEFAULT_PARKING_ENABLE=0",
+        "DEFAULT_JOG_LIMIT_ENABLE=1",
+        "DEFAULT_INVERT_SPINDLE_ENABLE_PIN=0",
+        "DEFAULT_INVERT_SPINDLE_CCW_PIN=0",
+        "DEFAULT_INVERT_SPINDLE_PWM_PIN=0",
+        "DEFAULT_SPINDLE_RPM_MAX=24000",
+        "DEFAULT_SPINDLE_RPM_MIN=7200",
+        "DEFAULT_SPINDLE_PWM_FREQ=1000",
+        "DEFAULT_DOOR_IGNORE_WHEN_IDLE=1",
+        "DEFAULT_DOOR_KEEP_COOLANT_ON=1",
+        "TRINAMIC_DEFAULT_MICROSTEPS=32",
+        "TRINAMIC_DYNAMIC_CURRENT=1",
+        "TRINAMIC_EXTENDED_SETTINGS=1",
+        "MAXIMUM_STEPPER_CURRENT_2660=2800", - not used, set by trinamic driver
+        "DEFAULT_X_CURRENT=2800",
+        "DEFAULT_Y_CURRENT=2800",
+        "DEFAULT_Z_CURRENT=2800",
+        "TMC_X_HOLD_CURRENT_PCT=35",
+        "TMC_Y_HOLD_CURRENT_PCT=35",
+        "TMC_Z_HOLD_CURRENT_PCT=35",
+        "DEFAULT_X_MAX_TRAVEL=810",
+        "DEFAULT_Y_MAX_TRAVEL=855",
+        "DEFAULT_Z_MAX_TRAVEL=120",
+        "DEFAULT_A_MAX_TRAVEL=0",
+        "DEFAULT_X_ACCELERATION=1000",
+        "DEFAULT_Y_ACCELERATION=1000",
+        "DEFAULT_Z_ACCELERATION=750",
+        "DEFAULT_A_ACCELERATION=1000",
+        "DEFAULT_X_MAX_RATE=5500",
+        "DEFAULT_Y_MAX_RATE=5500",
+        "DEFAULT_Z_MAX_RATE=4500",
+        "DEFAULT_A_MAX_RATE=8000",
+        "DEFAULT_X_STEPS_PER_MM=800",
+        "DEFAULT_Y_STEPS_PER_MM=800",
+        "DEFAULT_Z_STEPS_PER_MM=800",
+        "DEFAULT_A_STEPS_PER_MM=79",
+        "DEFAULT_AXIS_ROTATIONAL_MASK=8",
+        "DEFAULT_SOFT_LIMIT_ENABLE=1",
+        "DEFAULT_HARD_LIMIT_ENABLE=1",
+        "DEFAULT_NO_UNLOCK_AFTER_ESTOP=1",
+        "DEFAULT_SPINDLE1_RPM_MAX=255", - why?
+        "DEFAULT_SPINDLE1_PWM_FREQ=1000", - why?
+        "DEFAULT_MOTOR_FAULT_SIGNALS_ENABLE=0",
+        "DEFAULT_SPINDLE_AT_SPEED_TOLERANCE=5",
+        "DEFAULT_SPINDLE_ON_DELAY=11000",
+        "DEFAULT_RGB_STRIP0_LENGTH=1", - board specific
+        "DEFAULT_RGB_STRIP1_LENGTH=0", - board specific
+        "DEFAULT_PERSIST_TOOL=1"
+    ],
+	"network_options" = [
+        "TELNET_ENABLE=1",
+        "WEBSOCKET_ENABLE=1",
+        "FTP_ENABLE=1",
+        "NETWORK_IPMODE=0" - default, if changed by user do not override on reset?
+		"ethernet" = [
+			"ETHERNET_ENABLE=1", - if available
+		],
+		"wifi_ap" = [
+		],
+		"wifi_ap" = [
+		],
+	]
+}
