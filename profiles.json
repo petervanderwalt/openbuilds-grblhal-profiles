@@ -6,7 +6,7 @@
       "URL": "https://resources.sienci.com/view/altmill/",
       "type": "router",
       "description": "Sienci AltMill MK2"
-    }
+    },
     {
       "name": "Sienci Longmill",
       "profileURL": "https://github.com/Sienci-Labs/profiles/longmill.json",
