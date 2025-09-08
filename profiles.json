@@ -5,14 +5,18 @@
       "profileURL": "https://github.com/Sienci-Labs/profiles/altmill.json",
       "URL": "https://resources.sienci.com/view/altmill/",
       "type": "router",
-      "description": "Sienci AltMill MK2"
+      "description": "Sienci AltMill MK2",
+      "driver": "STM32F4xx",
+      "board": "BOARD_LONGBOARD32_EXT"
     },
     {
       "name": "Sienci Longmill",
       "profileURL": "https://github.com/Sienci-Labs/profiles/longmill.json",
       "URL": "https://resources.sienci.com/view/lmmk2/",
       "type": "router",
-      "description": "Sienci LongMill Benchtop CNC MK2.5"
+      "description": "Sienci LongMill Benchtop CNC MK2.5",
+      "driver": "STM32F4xx",
+      "board": "BOARD_LONGBOARD32"
     }
   ]
 }
