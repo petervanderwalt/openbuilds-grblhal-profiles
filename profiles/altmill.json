@@ -10,27 +10,19 @@
   },
   "variants": [
     {
-      "name": "Altmill 16x33",
+      "name": "Altmill 2x4",
       "URL": "https://sienci.com/product/altmill/",
       "webbuilder_overrides": {},
       "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=406"
+        "DEFAULT_Y_MAX_TRAVEL=635"
       ]
     },
     {
-      "name": "Altmill 32x33",
+      "name": "Altmill 4x4",
       "URL": "https://sienci.com/product/altmill/",
       "webbuilder_overrides": {},
       "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=810"
-      ]
-    },
-    {
-      "name": "Altmill 48x33",
-      "URL": "https://sienci.com/product/altmill/",
-      "webbuilder_overrides": {},
-      "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=1220"
+        "DEFAULT_Y_MAX_TRAVEL=1251"
       ]
     }
   ],
