@@ -8,6 +8,35 @@
     "URL": "https://github.com/grblHAL/STM32F4xx",
     "board": "BOARD_LONGBOARD32_EXT"
   },
+  "variants": [
+    {
+      "name": "Altmill 16x33",
+      "URL": "https://sienci.com/product/altmill/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=406",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    },
+    {
+      "name": "Altmill 32x33",
+      "URL": "https://sienci.com/product/altmill/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=810",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    },
+    {
+      "name": "Altmill 48x33",
+      "URL": "https://sienci.com/product/altmill/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=1220",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    }
+  ],
   "webbuilder_overrides": {
     "USB_SERIAL_CDC": "1",
     "N_AXIS": "4",

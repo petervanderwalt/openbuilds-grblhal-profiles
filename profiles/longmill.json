@@ -8,37 +8,66 @@
     "URL": "https://github.com/grblHAL/STM32F4xx",
     "board": "BOARD_LONGBOARD32"
   },
+  "variants": [
+    {
+      "name": "LongMill MK2 12x30",
+      "URL": "https://sienci.com/product/longmill-mk2-12x30/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=320",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    },
+    {
+      "name": "LongMill MK2 30x30",
+      "URL": "https://sienci.com/product/longmill-mk2/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=810",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    },
+    {
+      "name": "LongMill MK2 48x30",
+      "URL": "https://sienci.com/product/longmill-mk2-48x30/",
+      "webbuilder_overrides": {},
+      "setting_defaults": [
+        "DEFAULT_X_MAX_TRAVEL=1280",
+        "DEFAULT_Y_MAX_TRAVEL=855"
+      ]
+    }
+  ],
   "webbuilder_overrides": {
-  "USB_SERIAL_CDC": "1",
-  "N_AXIS": "4",
-  "X_AXIS_OPT": "Single motor",
-  "Y_AXIS_OPT": "Ganged motors",
-  "Z_AXIS_OPT": "Single motor",
-  "PROBE_ENABLE": true,
-  "NGC_EXPRESSIONS_ENABLE": true,
-  "ROTARY_FIX": true,
-  "N_TOOLS": "8",
-  "TRINAMIC_ENABLE": "2660",
-  "TRINAMIC_MODE": "SPI separate CS",
-  "TRINAMIC_EXTENDED_SETTINGS": true,
-  "EEPROM_ENABLE": "24x128 (16K)",
-  "SPINDLE0_ENABLE": "PWM",
-  "SPINDLE1_ENABLE": "PWM 2 (no direction)",
-  "SPINDLE2_ENABLE": "H-100",
-  "MODBUS_ENABLE": "19200 baud",
-  "NETWORKING_ENABLE": "WIZ550io (W5500)",
-  "TELNET_ENABLE": true,
-  "WEBSOCKET_ENABLE": true,
-  "FTP_ENABLE": true,
-  "SDCARD_ENABLE": "With YModem",
-  "MACROS_ENABLE": "Bound to aux port(s)",
-  "N_MACROS": "3",
-  "RGB_LED_ENABLE": "LED strip config + M150",
-  "EVENTOUT_ENABLE": "1",
-  "SAFETY_DOOR_ENABLE": true,
-  "TOOLSETTER_ENABLE": true,
-  "STATUS_LIGHT_ENABLE": "Sienci lights"
-},
+    "USB_SERIAL_CDC": "1",
+    "N_AXIS": "4",
+    "X_AXIS_OPT": "Single motor",
+    "Y_AXIS_OPT": "Ganged motors",
+    "Z_AXIS_OPT": "Single motor",
+    "PROBE_ENABLE": true,
+    "NGC_EXPRESSIONS_ENABLE": true,
+    "ROTARY_FIX": true,
+    "N_TOOLS": "8",
+    "TRINAMIC_ENABLE": "2660",
+    "TRINAMIC_MODE": "SPI separate CS",
+    "TRINAMIC_EXTENDED_SETTINGS": true,
+    "EEPROM_ENABLE": "24x128 (16K)",
+    "SPINDLE0_ENABLE": "PWM",
+    "SPINDLE1_ENABLE": "PWM 2 (no direction)",
+    "SPINDLE2_ENABLE": "H-100",
+    "MODBUS_ENABLE": "19200 baud",
+    "NETWORKING_ENABLE": "WIZ550io (W5500)",
+    "TELNET_ENABLE": true,
+    "WEBSOCKET_ENABLE": true,
+    "FTP_ENABLE": true,
+    "SDCARD_ENABLE": "With YModem",
+    "MACROS_ENABLE": "Bound to aux port(s)",
+    "N_MACROS": "3",
+    "RGB_LED_ENABLE": "LED strip config + M150",
+    "EVENTOUT_ENABLE": "1",
+    "SAFETY_DOOR_ENABLE": true,
+    "TOOLSETTER_ENABLE": true,
+    "STATUS_LIGHT_ENABLE": "Sienci lights"
+  },
   "setting_defaults": [
     "DEFAULT_STEP_PULSE_MICROSECONDS=5",
     "DEFAULT_STEPPER_IDLE_LOCK_TIME=254",
