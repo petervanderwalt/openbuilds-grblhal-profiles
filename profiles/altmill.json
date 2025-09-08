@@ -14,8 +14,7 @@
       "URL": "https://sienci.com/product/altmill/",
       "webbuilder_overrides": {},
       "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=406",
-        "DEFAULT_Y_MAX_TRAVEL=855"
+        "DEFAULT_X_MAX_TRAVEL=406"
       ]
     },
     {
@@ -23,8 +22,7 @@
       "URL": "https://sienci.com/product/altmill/",
       "webbuilder_overrides": {},
       "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=810",
-        "DEFAULT_Y_MAX_TRAVEL=855"
+        "DEFAULT_X_MAX_TRAVEL=810"
       ]
     },
     {
@@ -32,8 +30,7 @@
       "URL": "https://sienci.com/product/altmill/",
       "webbuilder_overrides": {},
       "setting_defaults": [
-        "DEFAULT_X_MAX_TRAVEL=1220",
-        "DEFAULT_Y_MAX_TRAVEL=855"
+        "DEFAULT_X_MAX_TRAVEL=1220"
       ]
     }
   ],
