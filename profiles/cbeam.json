@@ -1,0 +1,58 @@
+{
+  "machine": {
+    "default_driver": "ESP32",
+    "default_board": "BOARD_BLACKBOX_X32",
+    "default_symbols": {
+      "DEFAULT_PROBE_SIGNAL_INVERT": 1,
+      "DEFAULT_ENABLE_SIGNALS_INVERT_MASK": 0,
+      "DEFAULT_STEPPER_IDLE_LOCK_TIME": 255
+    },
+    "setting_defaults": {
+      "DEFAULT_STEP_PULSE_MICROSECONDS": 10,
+      "DEFAULT_STEPPER_IDLE_LOCK_TIME": 255,
+      "DEFAULT_DIR_SIGNALS_INVERT_MASK": 0,
+      "DEFAULT_STEP_SIGNALS_INVERT_MASK": 0,
+      "DEFAULT_LIMIT_SIGNALS_INVERT_MASK": 0,
+      "DEFAULT_PROBE_SIGNAL_INVERT": 0,
+      "DEFAULT_HOMING_ENABLE": 1,
+      "DEFAULT_HOMING_DIR_MASK": 3,
+      "DEFAULT_HOMING_FEED_RATE": 50.000,
+      "DEFAULT_HOMING_SEEK_RATE": 1000.000,
+      "DEFAULT_HOMING_DEBOUNCE_DELAY": 250,
+      "DEFAULT_HOMING_PULLOFF": 1.000,
+      "DEFAULT_SPINDLE_RPM_MAX": 1000.000,
+      "DEFAULT_SPINDLE_RPM_MIN": 0.000,
+      "DEFAULT_X_STEPS_PER_MM": 400.000,
+      "DEFAULT_Y_STEPS_PER_MM": 400.000,
+      "DEFAULT_Z_STEPS_PER_MM": 400.000,
+      "DEFAULT_X_MAX_RATE": 3000.000,
+      "DEFAULT_Y_MAX_RATE": 3000.000,
+      "DEFAULT_Z_MAX_RATE": 1000.000,
+      "DEFAULT_X_ACCELERATION": 250.000,
+      "DEFAULT_Y_ACCELERATION": 250.000,
+      "DEFAULT_Z_ACCELERATION": 250.000,
+      "DEFAULT_SOFT_LIMIT_ENABLE": 1,
+      "DEFAULT_HARD_LIMIT_ENABLE": 1
+    }
+  },
+  "variants": [
+    {
+      "name": "C-Beam Machine",
+      "URL": "https://openbuildspartstore.com/c-beam-machine-cnc-kit/",
+      "setting_defaults": {
+        "DEFAULT_X_MAX_TRAVEL": 350,
+        "DEFAULT_Y_MAX_TRAVEL": 280,
+        "DEFAULT_Z_MAX_TRAVEL": 85
+      }
+    },
+    {
+      "name": "C-Beam Machine XLarge",
+      "URL": "https://openbuildspartstore.com/c-beam-machine-xlarge-cnc-kit/",
+      "setting_defaults": {
+        "DEFAULT_X_MAX_TRAVEL": 750,
+        "DEFAULT_Y_MAX_TRAVEL": 330,
+        "DEFAULT_Z_MAX_TRAVEL": 85
+      }
+    }
+  ]
+}

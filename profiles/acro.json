@@ -1,0 +1,52 @@
+{
+  "machine": {
+    "default_driver": "ESP32",
+    "default_board": "BOARD_BLACKBOX_X32",
+    "default_symbols": {
+      "DEFAULT_PROBE_SIGNAL_INVERT": 1,
+      "DEFAULT_ENABLE_SIGNALS_INVERT_MASK": 0,
+      "DEFAULT_STEPPER_IDLE_LOCK_TIME": 255
+    },
+    "setting_defaults": {
+      "DEFAULT_STEP_PULSE_MICROSECONDS": 10,
+      "DEFAULT_STEPPER_IDLE_LOCK_TIME": 255,
+      "DEFAULT_HOMING_ENABLE": 1,
+      "DEFAULT_SPINDLE_RPM_MAX": 1000.000,
+      "DEFAULT_SPINDLE_RPM_MIN": 0.000,
+      "DEFAULT_X_STEPS_PER_MM": 80.000,
+      "DEFAULT_Y_STEPS_PER_MM": 80.000,
+      "DEFAULT_X_MAX_RATE": 8000.000,
+      "DEFAULT_Y_MAX_RATE": 8000.000,
+      "DEFAULT_X_ACCELERATION": 500.000,
+      "DEFAULT_Y_ACCELERATION": 500.000,
+      "DEFAULT_SOFT_LIMIT_ENABLE": 1,
+      "DEFAULT_HARD_LIMIT_ENABLE": 1
+    }
+  },
+  "variants": [
+    {
+      "name": "ACRO System 500x500mm",
+      "URL": "https://openbuildspartstore.com/openbuilds-acro-system/",
+      "setting_defaults": {
+        "DEFAULT_X_MAX_TRAVEL": 300,
+        "DEFAULT_Y_MAX_TRAVEL": 300
+      }
+    },
+    {
+      "name": "ACRO System 1000x1000mm",
+      "URL": "https://openbuildspartstore.com/openbuilds-acro-system/",
+      "setting_defaults": {
+        "DEFAULT_X_MAX_TRAVEL": 800,
+        "DEFAULT_Y_MAX_TRAVEL": 800
+      }
+    },
+    {
+      "name": "ACRO System 1500x1500mm",
+      "URL": "https://openbuildspartstore.com/openbuilds-acro-system/",
+      "setting_defaults": {
+        "DEFAULT_X_MAX_TRAVEL": 1300,
+        "DEFAULT_Y_MAX_TRAVEL": 1300
+      }
+    }
+  ]
+}

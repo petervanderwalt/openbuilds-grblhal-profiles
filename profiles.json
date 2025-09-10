@@ -1,18 +1,39 @@
 {
   "machines": [
     {
-      "name": "Sienci Altmill MK2",
-      "profileURL": "https://github.com/Sienci-Labs/grblhal-profiles/blob/main/profiles/altmill.json",
-      "URL": "https://resources.sienci.com/view/altmill/",
+      "name": "LEAD CNC",
+      "profileURL": "https://github.com/petervanderwalt/grblhal-profiles/blob/main/profiles/lead.json",
+      "URL": "https://openbuildspartstore.com/lead-cnc-router-kits/",
       "type": "router",
-      "description": "Sienci AltMill MK2"
+      "description": "OpenBuilds LEAD CNC Router. A versatile and scalable CNC machine."
     },
     {
-      "name": "Sienci Longmill",
-      "profileURL": "https://github.com/Sienci-Labs/grblhal-profiles/blob/main/profiles/longmill.json",
-      "URL": "https://resources.sienci.com/view/lmmk2/",
+      "name": "WorkBee",
+      "profileURL": "https://github.com/petervanderwalt/grblhal-profiles/blob/main/profiles/workbee.json",
+      "URL": "https://openbuildspartstore.com/machines/workbee-cnc-router/",
       "type": "router",
-      "description": "Sienci LongMill Benchtop CNC MK2.5"
+      "description": "OpenBuilds WorkBee CNC Router. A popular and highly capable belt or screw-driven machine."
+    },
+    {
+      "name": "C-Beam Machine",
+      "profileURL": "https://github.com/petervanderwalt/grblhal-profiles/blob/main/profiles/cbeam.json",
+      "URL": "https://openbuildspartstore.com/c-beam-machine-cnc-kit/",
+      "type": "router",
+      "description": "OpenBuilds C-Beam Machine. A rigid, lead screw-driven CNC machine based on C-Beam."
+    },
+    {
+      "name": "ACRO System",
+      "profileURL": "https://github.com/petervanderwalt/grblhal-profiles/blob/main/profiles/acro.json",
+      "URL": "https://openbuildspartstore.com/openbuilds-acro-system/",
+      "type": "laser",
+      "description": "OpenBuilds ACRO System. A scalable XY positioning system for lasers, pens, and light-duty tools."
+    },
+    {
+      "name": "MiniMill",
+      "profileURL": "https://github.com/petervanderwalt/grblhal-profiles/blob/main/profiles/minimill.json",
+      "URL": "https://openbuildspartstore.com/openbuilds-minimill/",
+      "type": "router",
+      "description": "OpenBuilds MiniMill. A compact and robust desktop CNC machine for milling and engraving."
     }
   ]
 }
